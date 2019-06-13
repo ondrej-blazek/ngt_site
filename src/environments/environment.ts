@@ -3,8 +3,23 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  'production': false,
+  'server': 'firbase',
+  'local': {
+    'api_url': 'http://192.168.0.10:4100'
+  },
+  'firbase': {
+    'apiKey': 'AIzaSyAOk8Pf8QKwID_IcDW44lGdW42M8O_blxk',
+    'authDomain': 'ngt-site-prod.firebaseapp.com',
+    'databaseURL': 'https://ngt-site-prod.firebaseio.com',
+    'projectId': 'ngt-site-prod',
+    'storageBucket': 'ngt-site-prod.appspot.com',
+    'messagingSenderId': '397532914275',
+    'appID': ''
+  },
+  'firbaseAppName': 'ngt-site-prod'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
