@@ -4,7 +4,7 @@ export const environment = {
   'local': {
     'api_url': 'http://192.168.0.10:4100'
   },
-  'firbase': {
+  'firebase': {
     'apiKey': 'AIzaSyAOk8Pf8QKwID_IcDW44lGdW42M8O_blxk',
     'authDomain': 'ngt-site-prod.firebaseapp.com',
     'databaseURL': 'https://ngt-site-prod.firebaseio.com',
