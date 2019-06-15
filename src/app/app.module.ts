@@ -10,15 +10,11 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { AppComponent } from '@app/app.component';
-import { LoginComponent } from '@app/auth/login/login.component';
-import { ToolbarComponent } from '@app/toolbar/toolbar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    ToolbarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

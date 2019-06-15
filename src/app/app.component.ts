@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { LoginService } from '@app/auth/login.service';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,6 @@ export class AppComponent implements OnInit {
   
   constructor(
     private afAuth: AngularFireAuth,
-    private loginService: LoginService
   ) {  }
   
   ngOnInit() {}
