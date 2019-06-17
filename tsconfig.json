@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@app/*": ["src/app/*"],
+      "@auth/*": ["src/app/auth/*"],
       "@env/*": ["src/environments/*"]
     },
     "outDir": "./dist/out-tsc",

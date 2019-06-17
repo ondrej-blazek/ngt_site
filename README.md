@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+## auth CLI commands
+
+ng g module auth --routing
+ng g component auth/login
+ng g component auth/register
+ng g component auth/user
+
+ng g service auth/services/auth
+ng g service auth/services/user
+ng g service auth/services/authGuard
+ng g service auth/services/userModel
+ng g service auth/services/userResolver

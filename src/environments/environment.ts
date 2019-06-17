@@ -3,29 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  'production': false,
-  'server': 'firbase',
-  'local': {
-    'api_url': 'http://192.168.0.10:4100'
+  production: false,
+  server: 'firbase',
+  local: {
+    api_url: 'http://192.168.0.10:4100'
   },
-  'firebase': {
-    'apiKey': 'AIzaSyAOk8Pf8QKwID_IcDW44lGdW42M8O_blxk',
-    'authDomain': 'ngt-site-prod.firebaseapp.com',
-    'databaseURL': 'https://ngt-site-prod.firebaseio.com',
-    'projectId': 'ngt-site-prod',
-    'storageBucket': 'ngt-site-prod.appspot.com',
-    'messagingSenderId': '397532914275',
-    'appID': ''
-  },
-  'firbaseAppName': 'ngt-site-prod'
+  firebaseAppName: 'ngt-site-prod',
+  firebase: {
+    apiKey: 'AIzaSyAOk8Pf8QKwID_IcDW44lGdW42M8O_blxk',
+    authDomain: 'ngt-site-prod.firebaseapp.com',
+    databaseURL: 'https://ngt-site-prod.firebaseio.com',
+    projectId: 'ngt-site-prod',
+    storageBucket: 'ngt-site-prod.appspot.com',
+    messagingSenderId: '397532914275',
+    appID: ''
+  }
 };
-
-
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
