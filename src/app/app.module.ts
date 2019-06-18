@@ -7,15 +7,25 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
+// Declarations
 import { environment } from '@env/environment';
-import { AppRoutingModule } from '@app/app-routing.module';
 import { MaterialModule } from '@app/app.material.module';
-
-import { AuthModule } from '@app/auth/auth.module';
-import { HomeModule } from '@app/home/home.module';
-import { AuthGuard, AuthService, UserResolver, UserService } from '@auth/services';
+import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 
+// Auth stuff
+import { AuthModule } from '@app/auth/auth.module';
+import { AuthGuard, AuthService, UserResolver, UserService } from '@auth/services';
+
+// NGT base code
+import { NgsModule } from '@ngs/ngs.module';
+import { NgcModule } from '@ngc/ngc.module';
+import { NgtModule } from '@ngt/ngt.module';
+
+// Standard app / testing
+import { HomeModule } from '@app/home/home.module';
+import { SandboxModule } from '@app/sandbox/sandbox.module';
+import { DemoModule } from '@app/demo/demo.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +42,12 @@ import { AppComponent } from '@app/app.component';
     AngularFirestoreModule,
     AppRoutingModule,
     AuthModule,
-    HomeModule
+    NgsModule,
+    NgcModule,
+    NgtModule,
+    HomeModule,
+    SandboxModule,
+    DemoModule
   ],
   providers: [
     AuthGuard,

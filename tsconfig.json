@@ -5,7 +5,10 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@auth/*": ["src/app/auth/*"],
-      "@env/*": ["src/environments/*"]
+      "@env/*": ["src/environments/*"],
+      "@ngt/*": ["src/ng-three/*"],
+      "@ngs/*": ["src/ng-share/*"],
+      "@ngc/*": ["src/ng-canvas/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
