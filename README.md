@@ -41,3 +41,7 @@ ng g service auth/services/user
 ng g service auth/services/authGuard
 ng g service auth/services/userModel
 ng g service auth/services/userResolver
+
+ng g module demo --routing
+ng g module sandbox --routing
+
