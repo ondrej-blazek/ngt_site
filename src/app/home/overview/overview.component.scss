@@ -1,6 +1,23 @@
 .center {
   text-align: center;
+
+  &.side {
+    width: 33.3%;
+    display: inline-block;
+  }
+
+  h2.headlineMod {
+    display: inline-block;
+    line-height: 40px;
+  }
+  img.animGif {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 0px 30px;
+  }
 }
+
 .logo {
   padding: 50px;
   

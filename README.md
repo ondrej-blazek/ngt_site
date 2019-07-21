@@ -44,4 +44,3 @@ ng g service auth/services/userResolver
 
 ng g module demo --routing
 ng g module sandbox --routing
-
