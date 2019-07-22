@@ -21,6 +21,7 @@ import { AuthGuard, AuthService, UserResolver, UserService } from '@auth/service
 import { NgsModule } from '@ngs/ngs.module';
 import { NgcModule } from '@ngc/ngc.module';
 import { NgtModule } from '@ngt/ngt.module';
+import { NgdModule } from '@ngd/ngd.module';
 
 // Standard app / testing
 import { HomeModule } from '@app/home/home.module';
@@ -45,6 +46,7 @@ import { DemoModule } from '@app/demo/demo.module';
     NgsModule,
     NgcModule,
     NgtModule,
+    NgdModule,
     HomeModule,
     SandboxModule,
     DemoModule
