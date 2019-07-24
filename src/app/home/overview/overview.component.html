@@ -1,3 +1,42 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+
+    <div class="siteName">
+      <a routerLink="/home">Angular + ThreeJS</a>
+    </div>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="sandbox">Sandbox</button>
+      <mat-menu #sandbox="matMenu">
+        <button mat-menu-item>Test Canvas (2D canvas)</button>
+        <button mat-menu-item>Test setup (3D basics)</button>
+        <button mat-menu-item>Test Combined (2D and 3D)</button>
+      </mat-menu>
+    </div>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="demo">Demo</button>
+      <mat-menu #demo="matMenu">
+        <button mat-menu-item>Tiny dancer</button>
+        <button mat-menu-item>Damaged Helmet</button>
+        <button mat-menu-item>Audi R8</button>
+      </mat-menu>
+    </div>
+
+
+    <span class="example-spacer"></span>
+
+    <a routerLink="/login">
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">person</mat-icon>
+    </a>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">person_add</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">face</mat-icon>
+
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
 <div class="center logo">
   <img src="/assets/ngt_logo_small.jpg" />
 </div>
