@@ -1,3 +1,45 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+
+    <div class="siteName">
+      <a routerLink="/home">Angular + ThreeJS</a>
+    </div>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="sandbox">Sandbox</button>
+      <mat-menu #sandbox="matMenu">
+        <a mat-menu-item routerLink="/test-canvas">Test Canvas (2D canvas)</a>
+        <a mat-menu-item routerLink="/test-setup">Test setup (3D basics)</a>
+        <a mat-menu-item routerLink="/test-combined">Test Combined (2D and 3D)</a>
+      </mat-menu>
+    </div>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="demo">Demo</button>
+      <mat-menu #demo="matMenu">
+        <a mat-menu-item routerLink="/dancer">Tiny dancer</a>
+        <a mat-menu-item routerLink="/helmet">Damaged Helmet</a>
+        <a mat-menu-item routerLink="/car">Audi R8</a>
+      </mat-menu>
+    </div>
+
+    <span class="example-spacer"></span>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="auth">
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">face</mat-icon>
+      </button>
+      <mat-menu #auth="matMenu">
+        <a mat-menu-item routerLink="/login">Login</a>
+        <a mat-menu-item routerLink="/register">Register</a>
+        <a mat-menu-item routerLink="/user">User</a>
+      </mat-menu>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
 <div class="center logo">
   <img src="/assets/ngt_logo_small.jpg" />
 </div>
@@ -6,26 +48,4 @@
   <img src="/assets/construction.gif" class="animGif" />
   <h2 class="headlineMod">Angular + ThreeJS</h2>
   <img src="/assets/construction.gif" class="animGif" />
-</div>
-
-
-<div class="center side">
-  <h2>Sandbox</h2>
-  <p><a routerLink="/test-canvas">Test Canvas (2D canvas)</a></p>
-  <p><a routerLink="/test-setup">Test setup (3D basics)</a></p>
-  <p><a routerLink="/test-combined">Test Combined (2D and 3D)</a></p>
-</div>
-
-<div class="center side">
-  <h2>Demo</h2>
-  <p><a routerLink="/dancer">Tiny dancer</a></p>
-  <p><a routerLink="/helmet">Damaged Helmet</a></p>
-  <p><a routerLink="/car">Audi R8</a></p>
-</div>
-
-<div class="center side">
-  <h2>Auth</h2>
-  <p><a routerLink="/login">Login</a></p>
-  <p><a routerLink="/register">Register</a></p>
-  <p><a routerLink="/user">User</a></p>
 </div>
