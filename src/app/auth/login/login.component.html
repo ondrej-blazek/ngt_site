@@ -2,6 +2,12 @@
 
 <div>
   <form formGroup="loginForm">
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email address" value="">
+    </mat-form-field>
+
+
     <div class="form-group">
       <label>Email address</label>
       <input type="email" formControlName="email" class="form-control">
@@ -15,16 +21,16 @@
   </form>
 </div>
 
-<div>
-  <button type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()">Login with Facebook</button>
-</div>
-
-<div>
-  <button type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()">Login with Google</button>
-</div>
-
-<div>
-  <button type="button" class="btn btn-info btn-block" (click)="tryTwitterLogin()">Login with Twitter</button>
+<div class="socialLogin">
+  <div>
+    <button mat-button color="primary" type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()">Login with Facebook</button>
+  </div>
+  <div>
+    <button mat-button color="primary" type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()">Login with Google</button>
+  </div>
+  <div>
+    <button mat-button color="primary" type="button" class="btn btn-info btn-block" (click)="tryTwitterLogin()">Login with Twitter</button>
+  </div>
 </div>
 
 <div>
