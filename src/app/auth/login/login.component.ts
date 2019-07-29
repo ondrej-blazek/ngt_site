@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   public errorMessage: string = '';
 
   public matcher = new MyErrorStateMatcher();
+  public emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
   constructor(
     public authService: AuthService,
@@ -38,10 +39,10 @@ export class LoginComponent implements OnInit {
   }
 
   createForm() {
-    this.loginForm = this.fb.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required]
-    });
+    // this.loginForm = this.fb.group({
+    //   email: ['', Validators.required],
+    //   password: ['', Validators.required]
+    // });
   }
 
   tryFacebookLogin() {
@@ -74,10 +75,4 @@ export class LoginComponent implements OnInit {
         this.errorMessage = err.message;
       })
   }
-
-  emailFormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
-
 }
