@@ -24,6 +24,7 @@ import { NgtModule } from '@ngt/ngt.module';
 import { NgdModule } from '@ngd/ngd.module';
 
 // Standard app / testing
+import { SharedModule } from '@app/shared/shared.module';
 import { HomeModule } from '@app/home/home.module';
 import { SandboxModule } from '@app/sandbox/sandbox.module';
 import { DemoModule } from '@app/demo/demo.module';
@@ -47,6 +48,7 @@ import { DemoModule } from '@app/demo/demo.module';
     NgcModule,
     NgtModule,
     NgdModule,
+    SharedModule,
     HomeModule,
     SandboxModule,
     DemoModule

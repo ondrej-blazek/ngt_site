@@ -1,0 +1,32 @@
+.socialLogin{
+  padding: 20px 0px;
+
+  button {
+    width: 200px;
+    margin: 5px 0px;
+  }
+}
+
+.formCard {
+  width: 440px;
+  margin: 50px auto;
+  display: block;
+
+  .formBlock {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+
+    &.setRight {
+      text-align: right;
+    }
+
+    .mat-form-field {
+      width: 100%;
+    }
+
+    button {
+      margin: 0px auto;
+    }
+  }
+}

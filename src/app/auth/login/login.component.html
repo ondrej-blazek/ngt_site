@@ -1,32 +1,59 @@
-<h1 class="header">Login</h1>
+<div class="formCard">
+  <h1 class="header">Login</h1>
+</div>
 
-<div>
-  <form formGroup="loginForm">
-    <div class="form-group">
-      <label>Email address</label>
-      <input type="email" formControlName="email" class="form-control">
+<div class="formCard">
+  <mat-card>
+    <!-- <form formGroup="loginForm"> -->
+    <form>
+      <div class="formBlock">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher" />
+          <!-- <mat-hint>Enter valid email address.</mat-hint> -->
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="formBlock">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" value="" type="password">
+        </mat-form-field>
+      </div>
+
+      <div class="formBlock setRight">
+        <button mat-button color="primary" type="button" class="btn btn-primary btn-block" type="submit"
+          (click)="tryLogin(loginForm.value)">Login
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>
+
+<div class="formCard">
+  <mat-card>
+    <div class="formBlock">
+      <button mat-button color="primary" type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()">
+        Login with Facebook
+      </button>
     </div>
-    <div class="form-group">
-      <label>Password</label>
-      <input type="password" class="form-control" formControlName="password">
-      <label class="error">{{errorMessage}}</label>
+    <div class="formBlock">
+      <button mat-button color="primary" type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()">
+        Login with Google
+      </button>
     </div>
-    <button type="submit" (click)="tryLogin(loginForm.value)" class="btn btn-default">Login</button>
-  </form>
+    <div class="formBlock">
+      <button mat-button color="primary" type="button" class="btn btn-info btn-block" (click)="tryTwitterLogin()">
+        Login with Twitter
+      </button>
+    </div>
+  </mat-card>
 </div>
 
-<div>
-  <button type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()">Login with Facebook</button>
-</div>
-
-<div>
-  <button type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()">Login with Google</button>
-</div>
-
-<div>
-  <button type="button" class="btn btn-info btn-block" (click)="tryTwitterLogin()">Login with Twitter</button>
-</div>
-
-<div>
+<div class="formCard">
   <p>No account yet? <a routerLink="/register">Create an account</a></p>
 </div>

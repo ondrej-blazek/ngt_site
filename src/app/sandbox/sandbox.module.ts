@@ -31,3 +31,9 @@ import { UiLayersComponent } from './test-combined/ui-layers/ui-layers.component
   ]
 })
 export class SandboxModule { }
+
+
+
+// TODO:
+//  3rd party script running within ngc
+//  https://github.com/raphamorim/awesome-canvas#examples   particles.js   ->   https://codepen.io/VincentGarreau/pen/pnlso

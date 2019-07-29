@@ -10,21 +10,26 @@ import { HelmetComponent } from './helmet/helmet.component';
 
 const routes: Routes = [
   {
-    path: 'car',
+    path: 'demo',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'demo/car',
     component: CarComponent,
     resolve: {
       data: UserResolver
     }
   },
   {
-    path: 'dancer',
+    path: 'demo/dancer',
     component: DancerComponent,
     resolve: {
       data: UserResolver
     }
   },
   {
-    path: 'helmet',
+    path: 'demo/helmet',
     component: HelmetComponent,
     resolve: {
       data: UserResolver

@@ -10,21 +10,26 @@ import { TestCombinedComponent } from './test-combined/test-combined.component';
 
 const routes: Routes = [
   {
-    path: 'test-canvas',
+    path: 'sandbox',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'sandbox/test-canvas',
     component: TestCanvasComponent,
     resolve: {
       data: UserResolver
     }
   },
   {
-    path: 'test-setup',
+    path: 'sandbox/test-setup',
     component: TestSetupComponent,
     resolve: {
       data: UserResolver
     }
   },
   {
-    path: 'test-combined',
+    path: 'sandbox/test-combined',
     component: TestCombinedComponent,
     resolve: {
       data: UserResolver
