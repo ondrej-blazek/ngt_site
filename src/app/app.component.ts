@@ -7,10 +7,9 @@ import { AngularFireAuth } from '@angular/fire/auth';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  
   constructor(
     private afAuth: AngularFireAuth,
   ) {  }
-  
+
   ngOnInit() {}
 }

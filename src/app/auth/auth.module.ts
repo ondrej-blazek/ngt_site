@@ -11,8 +11,8 @@ import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
-    LoginComponent, 
-    RegisterComponent, 
+    LoginComponent,
+    RegisterComponent,
     UserComponent
   ],
   imports: [

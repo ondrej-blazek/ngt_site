@@ -14,7 +14,7 @@ export class AuthService {
 
   doFacebookLogin() {
     return new Promise<any>((resolve, reject) => {
-      let provider = new firebase.auth.FacebookAuthProvider();
+      const provider = new firebase.auth.FacebookAuthProvider();
       this.afAuth.auth
         .signInWithPopup(provider)
         .then(res => {
@@ -22,13 +22,13 @@ export class AuthService {
         }, err => {
           console.error(err);
           reject(err);
-        })
-    })
+        });
+    });
   }
 
   doTwitterLogin() {
     return new Promise<any>((resolve, reject) => {
-      let provider = new firebase.auth.TwitterAuthProvider();
+      const provider = new firebase.auth.TwitterAuthProvider();
       this.afAuth.auth
         .signInWithPopup(provider)
         .then(res => {
@@ -36,13 +36,13 @@ export class AuthService {
         }, err => {
           console.error(err);
           reject(err);
-        })
-    })
+        });
+    });
   }
 
   doGoogleLogin() {
     return new Promise<any>((resolve, reject) => {
-      let provider = new firebase.auth.GoogleAuthProvider();
+      const provider = new firebase.auth.GoogleAuthProvider();
       provider.addScope('profile');
       provider.addScope('email');
       this.afAuth.auth
@@ -53,8 +53,8 @@ export class AuthService {
         }, err => {
           console.error(err);
           reject(err);
-        })
-    })
+        });
+    });
   }
 
   doRegister(value) {
@@ -62,8 +62,10 @@ export class AuthService {
       firebase.auth().createUserWithEmailAndPassword(value.email, value.password)
         .then(res => {
           resolve(res);
-        }, err => reject(err))
-    })
+        },
+          err => reject(err)
+        );
+    });
   }
 
   doLogin(value) {
@@ -71,8 +73,10 @@ export class AuthService {
       firebase.auth().signInWithEmailAndPassword(value.email, value.password)
         .then(res => {
           resolve(res);
-        }, err => reject(err))
-    })
+        },
+         err => reject(err)
+        );
+    });
   }
 
   doLogout() {
@@ -80,8 +84,7 @@ export class AuthService {
       if (firebase.auth().currentUser) {
         this.afAuth.auth.signOut();
         resolve();
-      }
-      else {
+      } else {
         reject();
       }
     });

@@ -27,12 +27,12 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.data.subscribe(routeData => {
-      let data = routeData['data'];
+      const data = routeData['data'];
       if (data) {
         this.user = data;
         this.createForm(this.user.name);
       }
-    })
+    });
   }
 
   createForm(name) {
@@ -45,7 +45,7 @@ export class UserComponent implements OnInit {
     this.userService.updateCurrentUser(value)
       .then(res => {
         console.log(res);
-      }, err => console.log(err))
+      }, err => console.log(err));
   }
 
   logout() {
@@ -53,7 +53,7 @@ export class UserComponent implements OnInit {
       .then((res) => {
         this.location.back();
       }, (error) => {
-        console.log("Logout error", error);
+        console.log('Logout error', error);
       });
   }
 }

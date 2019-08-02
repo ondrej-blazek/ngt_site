@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
 
-import { AuthService } from '@auth/services'
+import { AuthService } from '@auth/services';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   public formGroup: any;
   public loginForm: FormGroup;
-  public errorMessage: string = '';
+  public errorMessage: string;
 
   public matcher = new MyErrorStateMatcher();
   public emailFormControl = new FormControl('', [Validators.required, Validators.email]);
@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private fb: FormBuilder
   ) {
+    this.errorMessage = '';
     this.createForm();
   }
 
@@ -49,21 +50,21 @@ export class LoginComponent implements OnInit {
     this.authService.doFacebookLogin()
       .then(res => {
         this.router.navigate(['/user']);
-      })
+      });
   }
 
   tryTwitterLogin() {
     this.authService.doTwitterLogin()
       .then(res => {
         this.router.navigate(['/user']);
-      })
+      });
   }
 
   tryGoogleLogin() {
     this.authService.doGoogleLogin()
       .then(res => {
         this.router.navigate(['/user']);
-      })
+      });
   }
 
   tryLogin(value) {
@@ -73,6 +74,6 @@ export class LoginComponent implements OnInit {
       }, err => {
         console.log(err);
         this.errorMessage = err.message;
-      })
+      });
   }
 }
