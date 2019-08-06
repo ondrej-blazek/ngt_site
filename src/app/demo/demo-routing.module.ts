@@ -18,21 +18,21 @@ const routes: Routes = [
     path: 'demo/car',
     component: CarComponent,
     resolve: {
-      data: UserResolver
+      // data: UserResolver
     }
   },
   {
     path: 'demo/dancer',
     component: DancerComponent,
     resolve: {
-      data: UserResolver
+      // data: UserResolver
     }
   },
   {
     path: 'demo/helmet',
     component: HelmetComponent,
     resolve: {
-      data: UserResolver
+      // data: UserResolver
     }
   }
 ];
