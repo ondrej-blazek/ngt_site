@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { UserResolver } from '@auth/services';
-
 // Local setup
 import { CarComponent } from './car/car.component';
 import { DancerComponent } from './dancer/dancer.component';
@@ -17,23 +15,17 @@ const routes: Routes = [
   {
     path: 'demo/car',
     component: CarComponent,
-    resolve: {
-      // data: UserResolver
-    }
+    resolve: {}
   },
   {
     path: 'demo/dancer',
     component: DancerComponent,
-    resolve: {
-      // data: UserResolver
-    }
+    resolve: {}
   },
   {
     path: 'demo/helmet',
     component: HelmetComponent,
-    resolve: {
-      // data: UserResolver
-    }
+    resolve: {}
   }
 ];
 
