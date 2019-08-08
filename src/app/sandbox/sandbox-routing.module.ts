@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { UserResolver } from '@auth/services';
-
 // Local setup
 import { TestCanvasComponent } from './test-canvas/test-canvas.component';
 import { TestSetupComponent } from './test-setup/test-setup.component';
@@ -19,37 +17,27 @@ const routes: Routes = [
   {
     path: 'sandbox/test-canvas',
     component: TestCanvasComponent,
-    resolve: {
-      data: UserResolver
-    }
+    resolve: {}
   },
   {
     path: 'sandbox/test-setup',
     component: TestSetupComponent,
-    resolve: {
-      data: UserResolver
-    }
+    resolve: {}
   },
   {
     path: 'sandbox/test-interactive-canvas',
     component: TestInterCanvasComponent,
-    resolve: {
-      data: UserResolver
-    }
+    resolve: {}
   },
   {
     path: 'sandbox/test-interactive-html',
     component: TestInnerHTMLComponent,
-    resolve: {
-      data: UserResolver
-    }
+    resolve: {}
   },
   {
     path: 'sandbox/test-combined',
     component: TestCombinedComponent,
-    resolve: {
-      data: UserResolver
-    }
+    resolve: {}
   }
 ];
 
