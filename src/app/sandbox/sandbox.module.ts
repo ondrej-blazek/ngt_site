@@ -7,29 +7,26 @@ import { NgsModule } from '@ngs/ngs.module';
 import { NgcModule } from '@ngc/ngc.module';
 import { NgtModule } from '@ngt/ngt.module';
 import { NgdModule } from '@ngd/ngd.module';
+import { NgrModule } from '@ngr/ngr.module';
 
 // Local setup
-import { TestCanvasComponent } from './test-canvas/test-canvas.component';
-import { TestSetupComponent } from './test-setup/test-setup.component';
-import { TestCombinedComponent } from './test-combined/test-combined.component';
-import { TestInterCanvasComponent } from './test-inter-canvas/test-inter-canvas.component';
-import { TestInnerHTMLComponent } from './test-inter-html/test-inter-html.component';
-import { TestGLTFComponent } from './test-gltf/test-gltf.component';
-import { TestGLTFLightsComponent } from './test-gltf-lights/test-gltf-lights.component';
-import { UiLayersComponent } from './test-combined/ui-layers/ui-layers.component';
-import { UiCamerasComponent } from './test-gltf-lights/ui-cameras/ui-cameras.component';
+import { PageCanvasComponent } from './page-canvas/page-canvas.component';
+import { PageCombinedComponent } from './page-combined/page-combined.component';
+import { PageGltfComponent } from './page-gltf/page-gltf.component';
+import { PageGltfLightsComponent } from './page-gltf-lights/page-gltf-lights.component';
+import { PageInterHtmlComponent } from './page-inter-html/page-inter-html.component';
+import { PageInterCanvasComponent } from './page-inter-canvas/page-inter-canvas.component';
+import { PageSetupComponent } from './page-setup/page-setup.component';
 
 @NgModule({
   declarations: [
-    TestCanvasComponent,
-    TestSetupComponent,
-    TestCombinedComponent,
-    TestInterCanvasComponent,
-    TestInnerHTMLComponent,
-    TestGLTFComponent,
-    TestGLTFLightsComponent,
-    UiLayersComponent,
-    UiCamerasComponent
+    PageCanvasComponent,
+    PageCombinedComponent,
+    PageGltfComponent,
+    PageGltfLightsComponent,
+    PageInterHtmlComponent,
+    PageInterCanvasComponent,
+    PageSetupComponent
   ],
   imports: [
     CommonModule,
@@ -37,6 +34,7 @@ import { UiCamerasComponent } from './test-gltf-lights/ui-cameras/ui-cameras.com
     NgcModule,
     NgtModule,
     NgdModule,
+    NgrModule,
     SandboxRoutingModule
   ]
 })

@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Local setup
-import { CarComponent } from './car/car.component';
-import { DancerComponent } from './dancer/dancer.component';
-import { HelmetComponent } from './helmet/helmet.component';
-import { CthulhuComponent } from './cthulhu/cthulhu.component';
-import { DatsunComponent } from './datsun/datsun.component';
+import { PageCarComponent } from './page-car/page-car.component';
+import { PageCthulhuComponent } from './page-cthulhu/page-cthulhu.component';
+import { PageDancerComponent } from './page-dancer/page-dancer.component';
+import { PageDatsunComponent } from './page-datsun/page-datsun.component';
+import { PageHelmetComponent } from './page-helmet/page-helmet.component';
 
 const routes: Routes = [
   {
@@ -16,27 +16,27 @@ const routes: Routes = [
   },
   {
     path: 'demo/car',
-    component: CarComponent,
+    component: PageCarComponent,
     resolve: {}
   },
   {
     path: 'demo/dancer',
-    component: DancerComponent,
+    component: PageDancerComponent,
     resolve: {}
   },
   {
     path: 'demo/helmet',
-    component: HelmetComponent,
+    component: PageHelmetComponent,
     resolve: {}
   },
   {
     path: 'demo/cthulhu',
-    component: CthulhuComponent,
+    component: PageCthulhuComponent,
     resolve: {}
   },
   {
     path: 'demo/datsun',
-    component: DatsunComponent,
+    component: PageDatsunComponent,
     resolve: {}
   }
 ];

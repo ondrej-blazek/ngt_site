@@ -9,7 +9,8 @@
       "@ngd/*": ["src/ng-dom/*"],
       "@ngt/*": ["src/ng-three/*"],
       "@ngs/*": ["src/ng-share/*"],
-      "@ngc/*": ["src/ng-canvas/*"]
+      "@ngc/*": ["src/ng-canvas/*"],
+      "@ngr/*": ["src/ng-resources/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
