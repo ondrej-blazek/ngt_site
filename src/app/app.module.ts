@@ -29,6 +29,7 @@ import { SharedModule } from '@app/shared/shared.module';
 import { HomeModule } from '@app/home/home.module';
 import { SandboxModule } from '@app/sandbox/sandbox.module';
 import { DemoModule } from '@app/demo/demo.module';
+import { WebModule } from '@app/web/web.module';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { DemoModule } from '@app/demo/demo.module';
     SharedModule,
     HomeModule,
     SandboxModule,
-    DemoModule
+    DemoModule,
+    WebModule
   ],
   providers: [
     AuthGuard,
