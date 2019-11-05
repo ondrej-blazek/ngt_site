@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
+import { FiftyFiftyComponent } from './fifty-fifty/fifty-fifty.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'web/herobanner',
+    path: 'web/hero-banner',
     component: HeroBannerComponent,
+    resolve: {}
+  },
+  {
+    path: 'web/fifty-fifty',
+    component: FiftyFiftyComponent,
     resolve: {}
   }
 ];

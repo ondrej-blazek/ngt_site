@@ -11,11 +11,13 @@ import { NgrModule } from '@ngr/ngr.module';
 
 // Local setup
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
+import { FiftyFiftyComponent } from './fifty-fifty/fifty-fifty.component';
 
 
 @NgModule({
   declarations: [
-    HeroBannerComponent
+    HeroBannerComponent,
+    FiftyFiftyComponent
   ],
   imports: [
     CommonModule,
