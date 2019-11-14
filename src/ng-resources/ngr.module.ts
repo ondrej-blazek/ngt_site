@@ -19,6 +19,7 @@ import { TestInterCanvasComponent } from './test-inter-canvas/test-inter-canvas.
 import { TestInnerHTMLComponent } from './test-inter-html/test-inter-html.component';
 import { TestGLTFComponent } from './test-gltf/test-gltf.component';
 import { TestGLTFLightsComponent } from './test-gltf-lights/test-gltf-lights.component';
+import { TestGltfUploadComponent } from './test-gltf-upload/test-gltf-upload.component';
 
 import { UiLayersComponent } from './test-combined/ui-layers/ui-layers.component';
 import { UiCamerasComponent } from './test-gltf-lights/ui-cameras/ui-cameras.component';
@@ -34,14 +35,14 @@ import { UiCamerasComponent } from './test-gltf-lights/ui-cameras/ui-cameras.com
   declarations: [
     CarComponent, DancerComponent, HelmetComponent, CthulhuComponent, DatsunComponent,
     TestCanvasComponent, TestSetupComponent, TestCombinedComponent, TestInterCanvasComponent,
-    TestInnerHTMLComponent, TestGLTFComponent, TestGLTFLightsComponent,
+    TestInnerHTMLComponent, TestGLTFComponent, TestGLTFLightsComponent, TestGltfUploadComponent,
     UiLayersComponent, UiCamerasComponent
   ],
   providers: [],
   exports: [
     CarComponent, DancerComponent, HelmetComponent, CthulhuComponent, DatsunComponent,
     TestCanvasComponent, TestSetupComponent, TestCombinedComponent, TestInterCanvasComponent,
-    TestInnerHTMLComponent, TestGLTFComponent, TestGLTFLightsComponent,
+    TestInnerHTMLComponent, TestGLTFComponent, TestGLTFLightsComponent, TestGltfUploadComponent,
     UiLayersComponent, UiCamerasComponent
   ]
 })
