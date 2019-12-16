@@ -1,0 +1,45 @@
+.heroBanner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+
+  .threeWrap {
+    width: 100%;
+    height: 100%;
+  }
+  .overlayWrap {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // background-color: rgba(0, 0, 0, .4);
+
+    .textBlock {
+      width: auto;
+      margin: 0;
+      padding: 250px 20px 0 20px;
+      display: block;
+      text-align: center;
+
+      @media only screen and (min-width: 768px) {
+        width: 50%;
+        margin: 0 auto;
+        padding: 300px 0 0 0;
+      }
+
+      h1 {
+        color: rgba(255, 255, 255, .8);
+        letter-spacing: 6px;
+      }
+      h4{
+        color: rgba(255, 255, 255, .5);
+        letter-spacing: 2px;  
+      }
+      p{
+        color: rgba(255, 255, 255, .4);
+      }
+    }
+  }
+}

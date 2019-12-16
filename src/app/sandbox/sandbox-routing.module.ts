@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Local setup
-import { TestCanvasComponent } from './test-canvas/test-canvas.component';
-import { TestSetupComponent } from './test-setup/test-setup.component';
-import { TestCombinedComponent } from './test-combined/test-combined.component';
-import { TestInterCanvasComponent } from './test-inter-canvas/test-inter-canvas.component';
-import { TestInnerHTMLComponent } from './test-inter-html/test-inter-html.component';
+import { PageCanvasComponent } from './page-canvas/page-canvas.component';
+import { PageCombinedComponent } from './page-combined/page-combined.component';
+import { PageGltfComponent } from './page-gltf/page-gltf.component';
+import { PageGltfLightsComponent } from './page-gltf-lights/page-gltf-lights.component';
+import { PageGltfUploadComponent } from './page-gltf-upload/page-gltf-upload.component';
+import { PageInterCanvasComponent } from './page-inter-canvas/page-inter-canvas.component';
+import { PageInterHtmlComponent } from './page-inter-html/page-inter-html.component';
+import { PageSetupComponent } from './page-setup/page-setup.component';
 
 const routes: Routes = [
   {
@@ -16,27 +19,42 @@ const routes: Routes = [
   },
   {
     path: 'sandbox/test-canvas',
-    component: TestCanvasComponent,
+    component: PageCanvasComponent,
     resolve: {}
   },
   {
     path: 'sandbox/test-setup',
-    component: TestSetupComponent,
+    component: PageSetupComponent,
     resolve: {}
   },
   {
     path: 'sandbox/test-interactive-canvas',
-    component: TestInterCanvasComponent,
+    component: PageInterCanvasComponent,
     resolve: {}
   },
   {
     path: 'sandbox/test-interactive-html',
-    component: TestInnerHTMLComponent,
+    component: PageInterHtmlComponent,
     resolve: {}
   },
   {
     path: 'sandbox/test-combined',
-    component: TestCombinedComponent,
+    component: PageCombinedComponent,
+    resolve: {}
+  },
+  {
+    path: 'sandbox/test-gltf',
+    component: PageGltfComponent,
+    resolve: {}
+  },
+  {
+    path: 'sandbox/test-gltf-lights',
+    component: PageGltfLightsComponent,
+    resolve: {}
+  },
+  {
+    path: 'sandbox/test-gltf-upload',
+    component: PageGltfUploadComponent,
     resolve: {}
   }
 ];

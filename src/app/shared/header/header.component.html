@@ -2,7 +2,26 @@
   <mat-toolbar-row>
 
     <div class="siteName">
-      <a routerLink="/home">Angular + ThreeJS</a>
+      <a routerLink="/home">ngT</a>
+    </div>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="demo">Demo</button>
+      <mat-menu #demo="matMenu">
+        <a mat-menu-item routerLink="/demo/dancer">Tiny dancer</a>
+        <a mat-menu-item routerLink="/demo/helmet">Damaged Helmet</a>
+        <a mat-menu-item routerLink="/demo/car">Audi R8</a>
+        <a mat-menu-item routerLink="/demo/cthulhu">Cthulhu Statuette</a>
+        <a mat-menu-item routerLink="/demo/datsun">1972 Datsun</a>
+      </mat-menu>
+    </div>
+
+    <div class="menuPortion">
+      <button mat-button [matMenuTriggerFor]="web">Web</button>
+      <mat-menu #web="matMenu">
+        <a mat-menu-item routerLink="/web/hero-banner">Hero Banner</a>
+        <a mat-menu-item routerLink="/web/fifty-fifty">50:50</a>
+      </mat-menu>
     </div>
 
     <div class="menuPortion">
@@ -13,19 +32,14 @@
         <a mat-menu-item routerLink="/sandbox/test-interactive-canvas">Test setup (3D + canvas)</a>
         <a mat-menu-item routerLink="/sandbox/test-interactive-html">Test setup (3D + HTML)</a>
         <a mat-menu-item routerLink="/sandbox/test-combined">Test Combined (3D + canvas + HTML)</a>
+        <a mat-menu-item routerLink="/sandbox/test-gltf">glTF (Mesh loader + canvas)</a>
+        <a mat-menu-item routerLink="/sandbox/test-gltf-lights">glTF (Mesh loader + Lights + Cameras)</a>
+        <a mat-menu-item routerLink="/sandbox/test-gltf-upload">glTF (User Upload > Scene loader)</a>
       </mat-menu>
     </div>
 
-    <div class="menuPortion">
-      <button mat-button [matMenuTriggerFor]="demo">Demo</button>
-      <mat-menu #demo="matMenu">
-        <a mat-menu-item routerLink="/demo/dancer">Tiny dancer</a>
-        <a mat-menu-item routerLink="/demo/helmet">Damaged Helmet</a>
-        <a mat-menu-item routerLink="/demo/car">Audi R8</a>
-      </mat-menu>
-    </div>
-
-    <!-- <span class="example-spacer"></span>
+<!--     
+    <span class="example-spacer"></span>
 
     <div class="menuPortion">
       <button mat-button [matMenuTriggerFor]="auth">
@@ -36,7 +50,8 @@
         <a mat-menu-item routerLink="/register">Register</a>
         <a mat-menu-item routerLink="/user">User</a>
       </mat-menu>
-    </div> -->
+    </div>
+    -->
 
   </mat-toolbar-row>
 </mat-toolbar>

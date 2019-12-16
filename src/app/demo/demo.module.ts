@@ -7,17 +7,22 @@ import { NgsModule } from '@ngs/ngs.module';
 import { NgcModule } from '@ngc/ngc.module';
 import { NgtModule } from '@ngt/ngt.module';
 import { NgdModule } from '@ngd/ngd.module';
+import { NgrModule } from '@ngr/ngr.module';
 
 // Local setup
-import { CarComponent } from './car/car.component';
-import { DancerComponent } from './dancer/dancer.component';
-import { HelmetComponent } from './helmet/helmet.component';
+import { PageCarComponent } from './page-car/page-car.component';
+import { PageCthulhuComponent } from './page-cthulhu/page-cthulhu.component';
+import { PageDancerComponent } from './page-dancer/page-dancer.component';
+import { PageDatsunComponent } from './page-datsun/page-datsun.component';
+import { PageHelmetComponent } from './page-helmet/page-helmet.component';
 
 @NgModule({
   declarations: [
-    CarComponent,
-    DancerComponent,
-    HelmetComponent
+    PageCarComponent,
+    PageCthulhuComponent,
+    PageDancerComponent,
+    PageDatsunComponent,
+    PageHelmetComponent
   ],
   imports: [
     CommonModule,
@@ -25,6 +30,7 @@ import { HelmetComponent } from './helmet/helmet.component';
     NgcModule,
     NgtModule,
     NgdModule,
+    NgrModule,
     DemoRoutingModule
   ]
 })
